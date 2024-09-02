@@ -1,0 +1,19 @@
+package com.coding.string;
+
+public class RemoveDuplicateFromString {
+
+	public static void main(String[] args) {
+		String str = "abcddeefghh";
+		
+		StringBuilder sb = new StringBuilder(str);
+		
+		str.chars().distinct().forEach(x -> sb.append(char(x)));
+		
+		
+		
+
+	}
+
+	
+
+}

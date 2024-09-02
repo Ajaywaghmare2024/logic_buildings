@@ -1,0 +1,29 @@
+package com.coding.string;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LongestSubStringWithoutRepeatingCharacter {
+
+	public static void main(String[] args) {
+		int count = 0 ;
+		String str = "abbaca";
+		Set<Character> set = new HashSet<>();
+		
+		for(int i= 0 ; i < str.length(); i++ ) {
+			
+			for(int  j= i ; j < str.length() ; j++) {
+				 if(!set.contains(str.charAt(j)))
+					 set.add(str.charAt(j));
+				 break;
+			}
+			count = Math.max(count, set.size());
+			System.out.println(str.charAt(j));
+			
+		}
+		System.out.println(count);
+	
+		
+	}
+
+}

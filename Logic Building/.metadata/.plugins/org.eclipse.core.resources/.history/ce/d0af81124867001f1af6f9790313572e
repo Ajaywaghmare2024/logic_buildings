@@ -1,0 +1,23 @@
+package com.coding.string;
+
+public class RemoveDuplicateFromString {
+
+	public static void main(String[] args) {
+		String str = "abcddeefghh";
+		
+		StringBuilder sb = new StringBuilder(str);
+		
+		str.chars().distinct().forEach(x -> sb.append(Character(x)));
+		System.out.println(sb);
+		
+		
+		
+
+	}
+
+	private static Object Character(int x) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

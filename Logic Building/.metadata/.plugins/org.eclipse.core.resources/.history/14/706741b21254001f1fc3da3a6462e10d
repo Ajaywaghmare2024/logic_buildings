@@ -1,0 +1,28 @@
+package com.coding;
+
+import java.util.Scanner;
+
+public class FibbonaciiSeries {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int number=0;
+		int f1=0,f2=1;
+		
+		System.out.println(f1+" "+f2);
+		
+		for(int i=1;i<=number;i++) {
+			int thirdNum=f1+f2;
+			
+			f1=f2;
+			f2=thirdNum;
+			System.out.println(thirdNum);
+		}
+		
+		
+		
+
+	}
+
+}

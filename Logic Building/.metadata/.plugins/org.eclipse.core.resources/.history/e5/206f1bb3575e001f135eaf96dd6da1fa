@@ -1,0 +1,14 @@
+package com.coding;
+
+public class SwapNumbers {
+
+	public static void main(String[] args) {
+		
+		// swap the numbers using third variable ;
+		 int num1=10,num2=20,temp;
+		 
+		 System.out.println(" After the swap num1="+num1+"num2"+num2);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.coding.string;
+
+public class ReverseUsingStringBuilder {
+
+	public static void main(String[] args) {
+		String str="Virat is batsman";
+		StringBuilder sb=new StringBuilder();
+		sb.append(str);
+		sb.reverse();
+		System.out.println(sb);
+
+	}
+
+}

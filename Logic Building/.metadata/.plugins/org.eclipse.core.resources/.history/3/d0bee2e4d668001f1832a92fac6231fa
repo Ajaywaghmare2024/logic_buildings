@@ -1,0 +1,25 @@
+package com.coding;
+
+public class CountingNoOfDayInMonth {
+
+	public static void main(String[] args) {
+		int month = 2;
+		int year =2013;
+		
+		if((month == 2) && (year%4==0) ||((year%100!=0) && (year % 400==0))) {
+			System.out.println("numbers of Days in month is 29");
+		}
+		else if(month ==2){
+			System.out.println("number of days in month is 28");
+		}
+		else if(month == 1 || month == 3 || month == 5 || month == 8 
+				||month ==7 || month == 10 ||month == 12) {
+			System.out.println("numbers of days in moth is 31");
+		}
+		else {
+			System.out.println("number of the days 30");
+		}
+
+	}
+
+}

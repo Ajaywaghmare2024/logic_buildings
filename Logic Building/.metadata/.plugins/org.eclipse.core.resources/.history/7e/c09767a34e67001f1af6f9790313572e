@@ -1,0 +1,17 @@
+package com.coding;
+
+public class MissingNoArray {
+
+	public static void main(String[] args) {
+		long arr[] = { 11, 12, 14, 15 };
+		long sum = 0;
+		long n = arr.length + 1;
+		long missNo = (n * (n + 1)) / 2;
+
+		for (long i : arr) {
+			sum += i;
+		}
+		System.out.println(sum - missNo);
+
+	}
+}
